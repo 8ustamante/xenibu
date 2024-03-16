@@ -1,0 +1,75 @@
+Todos los partidos de ese dia, contiene la id del partido,slug, y customid, la customId es la id de los partidos en este caso "11936777":
+
+https://api.sofascore.com/api/v1/sport/football/scheduled-events/2024-03-09
+
+https://api.sofascore.com/api/v1/sport/football/scheduled-events/(aa-dd-mm)
+
+
+Obtener los datos de los versus.
+
+"slug":"rosenborg-bk-tromso-il" "customId":"knsly" "crowdsourcingDataDisplayEnabled":false,"id":11936777,"
+
+https://www.sofascore.com/es/rosenborg-bk-tromso-il/knsly#id:11936777
+
+
+Informacion del evento: (torneo, estadio, visita y local, )
+https://api.sofascore.com/api/v1/event/11936777
+
+--------
+
+tabla del torneo, con win y loss y points, positions:
+https://api.sofascore.com/api/v1/tournament/19232/season/57374/standings/total
+
+----------
+
+avgRating, Ultimos 5 partidos, con posicion del equipo.
+
+https://api.sofascore.com/api/v1/event/11995662/pregame-form
+
+{"homeTeam":{"avgRating":"6.88","position":18,"value":"9","form":["D","D","L","D","L"]},"awayTeam":{"avgRating":"6.74","position":15,"value":"11","form":["L","L","W","W","L"]},"label":"Pts"}
+
+Votos de las personas - local=vote1 - empate=voteX - visitante=vote2:
+https://api.sofascore.com/api/v1/event/11936777/votes
+
+
+Cuotas en fraccional:
+https://api.sofascore.com/api/v1/event/11472011/odds/226/all
+
+
+
+Apuesta pre-partido
+
+Debe estar en los primero 5 clasificados en ligas de 15 o mas, si es de 14 o menos los primeros 3.
+
+Minimo 10 puntos en los Ultimos 5 partidos.
+
+local haber sumado minimo 10 puntos en los ultimos partidos.
+
+visita no mas de 4 puntos en los ultimos partidos.
+
+apuesta simple o dobles combinadas ganador o handicap asiatico con mayor votacion.
+
+Ejemplo resultado:
+
+
+
+
+Liga: Eliteserien ok
+Local: ok
+Visitante: ok
+Posición local: ok
+Posición Visitante: ok
+Equipo con mayor votacion: ok
+Puntos de los ultimos 5 partidos: Puntos: ok
+Puntos de los ultimos 5 partidos: Puntos: ok
+Tipo de apuesta: Ganador Equipo (Cuota baja por mayor votacion);
+
+
+
+Equipos: Rosenborg BK vs Tromsø IL
+Posición en la tabla: 2° vs 13°
+Cuota del local: Mayor votacion
+Rendimiento reciente: 10 vs 8
+Tipo de apuesta: Ganador Rosenborg BK (mayor votacion)
+
+
